@@ -1,0 +1,52 @@
+yarn run v1.22.19
+$ /home/evistep/AwesomeProject/node_modules/.bin/react-native run-android --verbose
+info JS server already running.
+info Installing the app...
+debug Running command "cd android && ./gradlew app:installDebug -PreactNativeDevServerPort=8081"
+> Task :react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :react-native-gradle-plugin:classes UP-TO-DATE
+> Task :react-native-gradle-plugin:inspectClassesForKotlinIC UP-TO-DATE
+> Task :react-native-gradle-plugin:jar UP-TO-DATE
+5 actionable tasks: 5 up-to-date
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
+> SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.dir path in your project's local properties file at '/home/evistep/AwesomeProject/android/local.properties'.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s
+
+Error: Command failed: ./gradlew app:installDebug -PreactNativeDevServerPort=8081
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
+> SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.dir path in your project's local properties file at '/home/evistep/AwesomeProject/android/local.properties'.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s
+
+    at makeError (/home/evistep/AwesomeProject/node_modules/execa/index.js:174:9)
+    at /home/evistep/AwesomeProject/node_modules/execa/index.js:278:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async runOnAllDevices (/home/evistep/AwesomeProject/node_modules/@react-native-community/cli-platform-android/build/commands/runAndroid/runOnAllDevices.js:82:7)
+    at async Command.handleAction (/home/evistep/AwesomeProject/node_modules/@react-native-community/cli/build/index.js:108:9)
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
